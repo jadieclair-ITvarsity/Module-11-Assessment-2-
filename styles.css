@@ -1,0 +1,76 @@
+/* Header */
+
+.nav-link {
+  color: #915fa0 !important;
+  font-size: 1.5rem;
+}
+
+/* Main title */
+
+.main-heading h1 {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.heading-span-1 {
+  color: #e63b77;
+}
+
+.heading-span-2 {
+  color: #eebc0d;
+}
+
+.heading-span-3 {
+  color: #0f6b55;
+}
+
+.title {
+  color: #915fa0;
+  font-style: italic;
+}
+
+/* Header cards */
+
+.header-card {
+  transition: all 0.4s ease;
+}
+
+.header-card:hover {
+  opacity: 0.6;
+}
+
+.card img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.card-img-overlay h5 {
+  font-weight: 700;
+  backdrop-filter: blur(2px);
+  padding: 0.3rem;
+}
+
+/* Search box */
+
+.form-input {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+span.search-btn {
+  background-color: #915fa0;
+}
+
+/* Latest posts */
+
+.latest-posts {
+  display: flex;
+  flex-direction: column;
+}
