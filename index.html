@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodie Fanatix</title>
+    <title>Foodie Fanatix | Home</title>
     <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -20,33 +20,163 @@
   <body>
     <div class="container">
       <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom custom-border-bottom"
       >
         <a
-          href="/"
+          href="./index.html"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
-          <img src="./FoodieFanatix/images/logo.png" width="90px" alt="" />
+          <img
+            src="./FoodieFanatix/images/logo.png"
+            class="rounded-circle"
+            width="90px"
+            alt="Logo"
+          />
         </a>
         <ul class="nav mt-3">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="./index.html" class="nav-link active" aria-current="page"
+              >Home</a
+            >
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <a href="./FoodieFanatix/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./FoodieFanatix/favourites.html" class="nav-link"
+              >Favorites</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./FoodieFanatix/contact.html" class="nav-link">Contact</a>
+          </li>
         </ul>
       </header>
       <main>
         <div class="row">
           <!-- Main heading -->
 
-          <div class="main-heading">
+          <div class="main-heading mb-3">
             <h1 class="text-center">
               <span class="heading-span-1">SIMPLE.</span>
               <span class="heading-span-2">FANTASTIC.</span>
               <span class="heading-span-3">FOOD.</span>
-              <span class="title">Become a Foodie Fanatic!</span>
+              <span class="title">Welcome to Foodie Fanatix!</span>
             </h1>
+          </div>
+
+          <!-- Carousel -->
+
+          <div
+            id="myCarousel"
+            class="carousel slide mb-6"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./FoodieFanatix/images/carousel-3.jpg"
+                  class="rounded"
+                  width="100%"
+                  height="100%"
+                  alt="Photo of venue"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./FoodieFanatix/images/carousel-1.avif"
+                  class="rounded"
+                  width="100%"
+                  height="100%"
+                  alt="Photo of venue"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./FoodieFanatix/images/carousel-2.jpg"
+                  class="rounded"
+                  width="100%"
+                  height="100%"
+                  alt="Photo of venue"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- short intro -->
+
+          <div class="row featurette my-5 align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">
+                <code>World Food Blogger.</code>
+                <span class="text-body-secondary">Feel the Love.</span>
+              </h2>
+              <p class="lead">
+                Dive into the culinary adventures of Claire, a passionate food
+                blogger who travels the globe to uncover the best restaurants
+                and food outlets in major cities. Join Claire on Foodie Fanatix
+                as she shares her gastronomic experiences, from hidden gems to
+                world-renowned eateries, offering a taste of the finest cuisines
+                and dining experiences around the world. Discover mouth-watering
+                reviews, stunning food photography, and insider tips that will
+                elevate your dining adventures.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img
+                src="./FoodieFanatix/images/intro-profile.png"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                alt="Photo of venue"
+              />
+            </div>
           </div>
 
           <!-- Cards -->
@@ -54,235 +184,335 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2">
             <div class="col">
               <div class="card">
-                <a href="#" class="header-card">
+                <div class="header-card">
                   <img
                     src="./FoodieFanatix/images/header-breakfast.jpg"
                     class="card-img"
                     width="100%"
                     height="100%"
-                    alt=""
+                    alt="Photo of venue"
                   />
                   <div class="card-img-overlay">
                     <h5 class="card-title fs-2 text-center w-100 text-dark">
                       Breakfast
                     </h5>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <a href="#" class="header-card">
+                <div class="header-card">
                   <img
                     src="./FoodieFanatix/images/header-lunch.jpg"
                     class="card-img"
                     width="100%"
                     height="100%"
-                    alt=""
+                    alt="Photo of venue"
                   />
                   <div class="card-img-overlay">
                     <h5 class="card-title fs-2 text-center w-100 text-dark">
                       Lunch
                     </h5>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <a href="#" class="header-card">
+                <div class="header-card">
                   <img
                     src="./FoodieFanatix/images/header-dinner.jpg"
                     class="card-img"
                     width="100%"
                     height="100%"
-                    alt=""
+                    alt="Photo of venue"
                   />
                   <div class="card-img-overlay">
                     <h5 class="card-title fs-2 text-center w-100 text-dark">
                       Dinner
                     </h5>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <a href="#" class="header-card">
+                <div class="header-card">
                   <img
                     src="./FoodieFanatix/images/header-dessert.jpg"
                     class="card-img"
                     width="100%"
                     height="100%"
-                    alt=""
+                    alt="Photo of venue"
                   />
                   <div class="card-img-overlay">
                     <h5 class="card-title fs-2 text-center w-100 text-dark">
                       Dessert
                     </h5>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Search box -->
 
-          <form class="my-4">
-            <div class="input-group mb-3 form-input">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search for Recipes"
-              />
-              <span class="input-group-text search-btn" id="basic-addon2"
-                >SEARCH</span
-              >
-            </div>
-          </form>
+          <div class="form-container my-4">
+            <form class="my-3">
+              <div class="input-group mb-3 p-4 form-input">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for Recipes"
+                />
+                <span class="input-group-text search-btn ms-3" id="basic-addon2"
+                  >SEARCH</span
+                >
+              </div>
+            </form>
+          </div>
 
           <!-- Latest posts -->
 
-          <div class="latest-posts">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col-md-10 latest-posts my-5">
+            <h2>Latest Posts</h2>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3">
               <div class="col">
-                <div class="card shadow-sm">
-                  <svg
-                    class="bd-placeholder-img card-img-top"
+                <div class="card shadow-lg">
+                  <img
+                    class="card-img-top"
                     width="100%"
                     height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Thumbnail
-                    </text>
-                  </svg>
+                    src="./FoodieFanatix/images/latest-post-1.jpg"
+                    alt="Photo of venue"
+                  />
                   <div class="card-body">
+                    <h4>The Culinary Delights of Tokyo</h4>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Tokyo is a city that seamlessly blends tradition and
+                      innovation, and its culinary scene is no exception. Join
+                      me as I embark on a gastronomic adventure through Tokyo’s
+                      bustling streets and serene alleys. From savoring the
+                      delicate flavors of sushi at Tsukiji Market to indulging
+                      in a bowl of rich, umami-filled ramen in a hidden Shibuya
+                      eatery, this journey is a feast for the senses. Along the
+                      way, I'll share tips on where to find the best street
+                      food, the most authentic izakayas, and the perfect spots
+                      for a sweet treat.
                     </p>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
                       <div class="btn-group">
-                        <button
+                        <a
+                          href="./FoodieFanatix/tokyo.html"
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-light search-btn"
                         >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
+                          READ POST
+                        </a>
                       </div>
-                      <small class="text-body-secondary">9 mins</small>
+                      <small class="text-body-secondary">3 hrs ago</small>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <svg
-                    class="bd-placeholder-img card-img-top"
+                  <img
+                    class="card-img-top"
                     width="100%"
                     height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Thumbnail
-                    </text>
-                  </svg>
+                    src="./FoodieFanatix/images/latest-post-2.jpg"
+                    alt="Photo of venue"
+                  />
                   <div class="card-body">
+                    <h4>Paris – A Pastry Lover’s Paradise</h4>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Paris, the city of romance and home to some of the world’s
+                      finest pastries. I take you on a sugary journey through
+                      the charming patisseries and boulangeries of Paris.
+                      Experience the joy of biting into a perfectly crisp
+                      croissant at sunrise, the melt-in-your-mouth magic of
+                      macarons from Ladurée, and the rich, buttery layers of a
+                      classic mille-feuille. I'll also reveal some lesser-known
+                      spots where you can find innovative twists on traditional
+                      French desserts. Join me as we explore the sweet side of
+                      Paris, one delicious pastry at a time.
                     </p>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
                       <div class="btn-group">
-                        <button
+                        <a
+                          href="./FoodieFanatix/paris.html"
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-light search-btn"
                         >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
+                          READ POST
+                        </a>
                       </div>
-                      <small class="text-body-secondary">9 mins</small>
+                      <small class="text-body-secondary">5 days ago</small>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <svg
-                    class="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Thumbnail
-                    </text>
-                  </svg>
-                  <div class="card-body">
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
+                  <div class="card shadow-lg">
+                    <img
+                      class="card-img-top"
+                      width="100%"
+                      height="225"
+                      src="./FoodieFanatix/images/latest-post-3.jpg"
+                      alt="Photo of venue"
+                    />
+                    <div class="card-body">
+                      <h4>Authentic Italian Eats in Rome</h4>
+                      <p class="card-text">
+                        Rome is a city that truly celebrates food, with its rich
+                        culinary traditions and vibrant food culture. Join me as
+                        I explore the authentic flavors of Rome. From the
+                        bustling markets of Campo de' Fiori to the quaint
+                        trattorias tucked away in Trastevere, I'll share my
+                        experiences of tasting the best pasta, pizza, and gelato
+                        the city has to offer. Learn about the history and
+                        stories behind iconic dishes like carbonara and cacio e
+                        pepe, and discover where to find the freshest
+                        ingredients for a true Roman feast. Whether you’re
+                        planning a trip to Rome or simply dreaming of Italian
+                        flavors, this blog is your guide to eating like a local.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="btn-group">
+                          <a
+                            href="./FoodieFanatix/rome.html"
+                            type="button"
+                            class="btn btn-sm btn-outline-light search-btn"
+                          >
+                            READ POST
+                          </a>
+                        </div>
+                        <small class="text-body-secondary">12 days ago</small>
                       </div>
-                      <small class="text-body-secondary">9 mins</small>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="card shadow-lg">
+                    <img
+                      class="card-img-top"
+                      width="100%"
+                      height="225"
+                      src="./FoodieFanatix/images/latest-post-4.png"
+                      alt="Photo of venue"
+                    />
+                    <div class="card-body">
+                      <h4>New York City’s Best Brunch Spots</h4>
+                      <p class="card-text">
+                        New York City is a brunch lover's dream come true. With
+                        countless options to choose from, finding the perfect
+                        brunch spot can be overwhelming. That’s where I come in!
+                        I'll guide you through NYC’s vibrant brunch scene,
+                        highlighting the best places to enjoy this beloved meal.
+                        From trendy rooftop restaurants offering panoramic views
+                        and artisanal avocado toast to cozy diners serving up
+                        fluffy pancakes and bottomless mimosas, there’s
+                        something for everyone. Discover the hottest new
+                        openings, classic favorites, and hidden gems that will
+                        make your next brunch in the Big Apple unforgettable.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="btn-group">
+                          <a
+                            href="./FoodieFanatix/newyork.html"
+                            type="button"
+                            class="btn btn-sm btn-outline-light search-btn"
+                          >
+                            READ POST
+                          </a>
+                        </div>
+                        <small class="text-body-secondary">1 month ago</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 my-5">
+            <div class="categories">
+              <h5>Explore Food Categories</h5>
+              <ul class="category-list">
+                <li><a href="#">Barbecue/BBQ</a></li>
+                <li><a href="#">Best and Worst group tests</a></li>
+                <li><a href="#">Brazilian</a></li>
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">British</a></li>
+                <li><a href="#">Burgers</a></li>
+                <li><a href="#">Burmese</a></li>
+                <li><a href="#">Cambodian</a></li>
+                <li><a href="#">Chinese</a></li>
+                <li><a href="#">Chinese Dumplings</a></li>
+                <li><a href="#">Chinese Noodles</a></li>
+                <li><a href="#">Shaanxi/Xi'an</a></li>
+                <li><a href="#">Sichuanese</a></li>
+                <li><a href="#">Taiwanese</a></li>
+                <li><a href="#">Coffee</a></li>
+                <li><a href="#">Eclectic</a></li>
+                <li><a href="#">Ecuadorian</a></li>
+                <li><a href="#">Ethiopian/Eritrean</a></li>
+                <li><a href="#">Filipino</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">Gastropub</a></li>
+                <li><a href="#">Georgian</a></li>
+                <li><a href="#">German/Austrian</a></li>
+                <li><a href="#">Greek</a></li>
+                <li><a href="#">Guyanese</a></li>
+                <li><a href="#">Hot dogs</a></li>
+                <li><a href="#">Iranian</a></li>
+                <li><a href="#">Irish</a></li>
+                <li><a href="#">Italian</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">Jamaican/Caribbean</a></li>
+                <li><a href="#">Japanese</a></li>
+                <li><a href="#">Japanese Noodles</a></li>
+                <li><a href="#">Sushi/Sashimi</a></li>
+                <li><a href="#">Jewish</a></li>
+                <li><a href="#">Korean</a></li>
+                <li><a href="#">Lebanese/Jordanian/Levantine</a></li>
+                <li><a href="#">Malaysian/Singaporean</a></li>
+                <li><a href="#">Mexican</a></li>
+                <li><a href="#">Modern European / Modernist</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Nigerian/West African</a></li>
+                <li><a href="#">Pan-Asian</a></li>
+                <li><a href="#">Peruvian</a></li>
+                <li><a href="#">Portuguese</a></li>
+                <li><a href="#">Seafood</a></li>
+                <li><a href="#">South Asian</a></li>
+                <li><a href="#">Indian</a></li>
+                <li><a href="#">Pakistani</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Tapas</a></li>
+                <li><a href="#">Sri Lankan</a></li>
+                <li><a href="#">Steak/chophouse</a></li>
+                <li><a href="#">Street food/food court</a></li>
+                <li><a href="#">Thai and Lao</a></li>
+                <li><a href="#">Tibetan/Nepalese</a></li>
+                <li><a href="#">Turkish</a></li>
+                <li><a href="#">Turkish Kebabs</a></li>
+                <li><a href="#">Vegetarian</a></li>
+                <li><a href="#">Vietnamese</a></li>
+              </ul>
             </div>
           </div>
         </div>
