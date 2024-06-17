@@ -8,6 +8,11 @@ body {
   background-color: #e6d1ed !important;
 }
 
+h2,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Header */
 
 .nav-link {
@@ -111,11 +116,15 @@ a.search-btn:hover {
 
 /* Favourites Gallery */
 
-.card-body a.fav-btn {
+.card-body a.fav-btn,
+a.button,
+button.button {
   background-color: var(--background-color);
 }
 
-.card-body a.fav-btn:hover {
+.card-body a.fav-btn:hover,
+a.button:hover,
+button.button:hover {
   background-color: var(--primary-color);
 }
 

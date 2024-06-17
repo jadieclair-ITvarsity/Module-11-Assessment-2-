@@ -11,6 +11,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -51,38 +57,59 @@
         </ul>
       </header>
       <main>
-        <div class="my-5">
-          <div class="p-5 text-center bg-body-tertiary rounded-3">
-            <svg
-              class="bi mt-4 mb-3"
-              style="color: var(--bs-indigo)"
-              width="100"
-              height="100"
-            >
-              <use xlink:href="#bootstrap" />
-            </svg>
-            <h1 class="text-body-emphasis">Jumbotron with icon</h1>
-            <p class="col-lg-8 mx-auto fs-5 text-muted">
-              This is a custom jumbotron featuring an SVG image at the top, some
-              longer text that wraps early thanks to a responsive
-              <code>.col-*</code> class, and a customized call to action.
-            </p>
-            <div class="d-inline-flex gap-2 mb-5">
-              <button
-                class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
-                type="button"
-              >
-                Call to action
-                <svg class="bi ms-2" width="24" height="24">
-                  <use xlink:href="#arrow-right-short" />
-                </svg>
-              </button>
-              <button
-                class="btn btn-outline-secondary btn-lg px-4 rounded-pill"
-                type="button"
-              >
-                Secondary link
-              </button>
+        <div class="col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="./images/about-profile.avif"
+                class="d-block mx-lg-auto img-fluid rounded-4"
+                alt="Photo of woman with sunglasses"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                About <span class="title">Foodie Fanatix!</span>
+              </h1>
+              <p class="lead">
+                Welcome to FoodieFanatix, the ultimate destination for food
+                enthusiasts and culinary adventurers! My name is Claire, and
+                I'am a passionate food blogger and globe-trotter. FoodieFanatix
+                is dedicated to uncovering the best restaurants and food outlets
+                in major cities around the world. My journey began with a simple
+                love for delicious food and a curiosity about diverse culinary
+                traditions. Over the years, this passion has transformed into a
+                vibrant blog that brings the world’s flavors to your screen. My
+                meticulous approach to food blogging involves more than just
+                tasting dishes; I delve into the stories behind each restaurant,
+                the chefs who create the magic, and the local ingredients that
+                make every dish unique. From Michelin-starred establishments to
+                hidden street food gems, my reviews are honest, insightful, and
+                often sprinkled with a dash of humor. At FoodieFanatix, you’ll
+                find comprehensive reviews, mouth-watering photos, and insider
+                tips on where to find the best eats, whether you're planning
+                your next trip or simply looking for inspiration in your own
+                city. Join me on my culinary adventures and discover a world of
+                flavors, one bite at a time.
+                <br />
+                <br />
+                Happy eating! Claire
+                <br />
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a
+                  href="./contact.html"
+                  type="button"
+                  class="btn btn-md px-4 me-md-2 button"
+                >
+                  Contact
+                </a>
+                <button type="button" class="btn btn-md px-4 button">
+                  Follow
+                </button>
+              </div>
             </div>
           </div>
         </div>
