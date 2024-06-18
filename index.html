@@ -62,13 +62,15 @@
         <div class="row">
           <!-- Main heading -->
 
-          <div class="main-heading mb-3">
-            <h1 class="text-center">
-              <span class="heading-span-1">SIMPLE.</span>
-              <span class="heading-span-2">FANTASTIC.</span>
-              <span class="heading-span-3">FOOD.</span>
-              <span class="title">Welcome to Foodie Fanatix!</span>
-            </h1>
+          <div class="row featurette my-3 align-items-center">
+            <div class="col main-heading">
+              <h1 class="text-center">
+                <span class="heading-span-1">SIMPLE.</span>
+                <span class="heading-span-2">FANTASTIC.</span>
+                <span class="heading-span-3">FOOD.</span>
+                <span class="title">Welcome to Foodie Fanatix!</span>
+              </h1>
+            </div>
           </div>
 
           <!-- Carousel -->
@@ -177,10 +179,10 @@
             <div class="col-md-5">
               <img
                 src="./FoodieFanatix/images/intro-profile.png"
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                class="img-fluid featurette-image img-fluid mx-auto rounded-2"
                 width="500"
                 height="500"
-                alt="Photo of venue"
+                alt="Woman having lunch"
               />
             </div>
           </div>
@@ -270,14 +272,21 @@
                 <input
                   type="text"
                   class="form-control"
+                  id="search-input"
                   placeholder="Search for Recipes"
                 />
-                <span class="input-group-text search-btn ms-3" id="basic-addon2"
-                  >SEARCH</span
+                <button
+                  id="search-button"
+                  class="input-group-text search-btn ms-3"
+                  type="submit"
                 >
+                  SEARCH
+                </button>
               </div>
             </form>
           </div>
+
+          <div id="results"></div>
 
           <!-- Latest posts -->
 
@@ -523,6 +532,53 @@
           </div>
         </div>
       </main>
+
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          &copy; 2024 Designed by Jade Harris
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./FoodieFanatix/about.html"
+              class="nav-link px-2 text-body-secondary"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./FoodieFanatix/favourites.html"
+              class="nav-link px-2 text-body-secondary"
+              >Favorites</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./FoodieFanatix/contact.html"
+              class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
+    <script src="./FoodieFanatix/script.js"></script>
   </body>
 </html>

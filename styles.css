@@ -78,7 +78,7 @@ h4 {
   margin: 0 auto;
 }
 
-span.search-btn,
+button.search-btn,
 a.search-btn {
   background-color: var(--background-color);
   color: #000;
@@ -86,7 +86,7 @@ a.search-btn {
   cursor: pointer;
 }
 
-span.search-btn:hover,
+button.search-btn:hover,
 a.search-btn:hover {
   background-color: var(--primary-color);
 }
@@ -130,13 +130,11 @@ button.button:hover {
 
 /* Media queries */
 
-@media screen and(max-width: 425px) {
-  .carousel {
-    display: none;
-  }
-}
 @media screen and (max-width: 425px) {
   .carousel {
     display: none;
+  }
+  .form-container {
+    display: none !important;
   }
 }
